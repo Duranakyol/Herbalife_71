@@ -1,38 +1,276 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+EyeIcon {
+  display: none;
+}
+EyeDisabledIcon {
+  display: none;
+}
+
+.uploads,
+.likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+/* CAROUSEL */
+
+.myCarousel img {
+  width: 100%;
+  height: 670px;
+}
+
+.mySpan {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(25, 79, 79, 0.7);
+  padding: 7px 30px;
+  position: relative;
+  top: -350px;
+  left: 620px;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.myText {
+  position: relative;
+  top: 270px;
+}
+
+.myText p {
+  font-size: 1.3rem;
+}
+
+/* CARDS */
+
+.baslik {
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cardContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.myCard {
+  margin: 10px;
+  width: 300px;
+  height: 600px;
+  border: 1px solid gray;
+}
+
+.myCard:hover {
+  box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconUser {
+  font-size: 1.3em;
+  margin: 4px;
+  color: white;
+  border-radius: 8px;
+}
+
+.user > span {
+  font-weight: bold;
+}
+
+.imageAll {
+  width: 400px;
+  height: 300px;
+}
+
+.iconHeart {
+  color: red !important;
+}
+
+.myBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 23%;
+  height: 600px;
+  margin-bottom: 15px;
+}
+
+.myBox:hover {
+  box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(133, 171, 176, 0.8);
+  cursor: pointer;
+}
+
+.myLogo {
+  width: 120px;
+  height: 55px;
+  border-radius: 0px;
+}
+
+.preis {
+  background-color: #aaa;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.parca1 {
+  display: flex;
+  padding: 30px;
+}
+
+.parca1 > .myImage {
+  width: 800px;
+  height: 600px;
+  margin-right: 100px;
+}
+
+.metin > h1 {
+  color: red;
+  font-size: 3em;
+}
+
+.metin > p {
+  font-size: 1.4em;
+}
+
+.parca2 {
+  display: flex;
+  padding: 30px;
+  background-color: #ccc;
+}
+
+.parca2 > .myImage {
+  width: 800px;
+  height: 600px;
+  margin-left: 100px;
+}
+
+.metin > h1 {
+  color: red;
+  font-size: 3em;
+}
+
+.metin > p {
+  font-size: 1.4em;
+}
+
+.iletisim {
+  display: flex;
+}
+
+.iletisim > .harita > h1 {
+  color: red;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 100px 0 0 0;
+}
+
+.iletisim > .harita > .map {
+  margin: 70px 0 0 40px;
+}
+
+.person > h1 {
+  color: red;
+  text-align: center;
+  font-size: 2.4em;
+  margin: 10px 0;
+}
+
+.tamsayfa {
+  background-color: #bbb;
+  padding: 20px 0;
+}
+
+.tamsayfa > h1 {
+  font-size: 1.2em;
+  color: brown;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.produkt {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 1200px;
+  height: 200px;
+  background-color: white;
+  padding: 5px;
+  margin: 20px auto;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.produkt:hover {
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.produkt:first-child {
+  margin-top: 0;
+}
+
+.produkt:last-child {
+  margin-bottom: 0;
+}
+
+.produkt > img {
+  border-radius: 20px;
+}
+
+.produkt > .yazilar {
+  margin-top: 10px;
+}
+
+.produkt > .yazilar > h1 {
+  text-align: center;
+  color: red;
+  font-size: 1.4em;
+}
+
+.produkt > .yazilar > p {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.produkt > .yazilar > span {
+  float: right;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ccc;
 }
