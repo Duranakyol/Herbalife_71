@@ -76,8 +76,10 @@ EyeDisabledIcon {
 .myCard {
   margin: 10px;
   width: 300px;
-  height: 600px;
+  height: 580px;
   border: 1px solid gray;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 .myCard:hover {
@@ -183,6 +185,65 @@ EyeDisabledIcon {
   font-size: 1.4em;
 }
 
+/* CONTACT */
+
+.personContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.personNeu {
+  width: 280px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.personNeu:hover {
+  box-shadow: 0px 0px 5px 1px rgba(99, 143, 218, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(99, 143, 218, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(99, 143, 218, 0.75);
+  cursor: pointer;
+}
+
+.personNeu .image {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDX-JbxDsB3dHyHiBUx18MQpp-rbpD7JS51zncomchMeoFWVHdx6XRz2HumUSBz7-GBk&usqp=CAU);
+  width: 100%;
+  height: 130px;
+  border-radius: 20px 20px 0 0;
+}
+
+.image img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+  left: 80px;
+  z-index: 1;
+}
+
+.personNeu .name {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.personNeu .myBtn {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
 .iletisim {
   display: flex;
 }
@@ -206,8 +267,10 @@ EyeDisabledIcon {
   margin: 10px 0;
 }
 
+/* PRODUCTS */
+
 .tamsayfa {
-  background-color: #bbb;
+  background-color: #ddd;
   padding: 20px 0;
 }
 
@@ -217,10 +280,12 @@ EyeDisabledIcon {
   text-align: center;
 }
 
+/* PRODUCT */
+
 .produkt {
   display: flex;
   width: 1200px;
-  height: 200px;
+  height: 220px;
   background-color: white;
   padding: 5px;
   margin: 20px auto;

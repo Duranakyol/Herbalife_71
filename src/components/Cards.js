@@ -128,18 +128,20 @@ function GroupExample() {
         {LatestUploads.map((item) => (
           <div className="myCard">
             <Card.Img variant="top" src={item.url} />
-            <Card.Body>
-              <Card.Title>{item.title}</Card.Title>
-              <Card.Text>{item.detail}</Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">
-                <BsFillStarFill />
-                <BsFillStarFill />
-                <BsFillStarFill />
-                <BsFillStarFill />
-              </small>
-            </Card.Footer>
+            <div className="cardText">
+              <Card.Body>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>{item.detail}</Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                </small>
+              </Card.Footer>
+            </div>
           </div>
         ))}
       </div>
@@ -148,19 +150,21 @@ function GroupExample() {
         {TopLikes.map((item) => (
           <div className="myCard">
             <Card.Img variant="top" src={item.url} />
-            <Card.Body>
-              <Card.Title>{item.title}</Card.Title>
-              <Card.Text>{item.detail}</Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">
-                {" "}
-                <BsFillStarFill />
-                <BsFillStarFill />
-                <BsFillStarFill />
-                <BsFillStarFill />
-              </small>
-            </Card.Footer>
+            <div className="cardText">
+              <Card.Body>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>{item.detail}</Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">
+                  {" "}
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                  <BsFillStarFill />
+                </small>
+              </Card.Footer>
+            </div>
           </div>
         ))}
       </div>

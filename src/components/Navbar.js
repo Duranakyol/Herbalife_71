@@ -23,18 +23,18 @@ function myNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Anasayfa</Nav.Link>
+            <Nav.Link href="/">Anasayfa</Nav.Link>
 
             <NavDropdown title="Ürünler" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Milkshake</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Ögütücüler</NavDropdown.Item>
+              <NavDropdown.Item href="/products">Milkshake</NavDropdown.Item>
+              <NavDropdown.Item href="/products">Ögütücüler</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="/products">
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/hakkimizda">Hakkimizda</Nav.Link>
-            <Nav.Link href="/iletisim">Iletisim</Nav.Link>
+            <Nav.Link href="/about">Hakkimizda</Nav.Link>
+            <Nav.Link href="/contact">Iletisim</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
