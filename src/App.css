@@ -330,6 +330,14 @@ EyeDisabledIcon {
   float: right;
 }
 
+/* LOGIN PAGE */
+
+.loginPage {
+  margin: 20px auto;
+  width: 500px;
+  height: 100vh;
+}
+
 /* FOOTER */
 
 .footer {
