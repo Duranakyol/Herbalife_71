@@ -2,13 +2,17 @@ import React from "react";
 import { TextField, Button, Box, Link, Typography } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import { changeEmail, changePassword, logIn } from "../redux/authSlice";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SignIn() {
+  const navigate = useNavigate();
+
   const email = useSelector((state) => state.auth.email);
   const password = useSelector((state) => state.auth.password);
 
-  console.log("->IN", email, password);
+  // console.log("->IN", email, password);
 
   const isLoading = useSelector((state) => state.auth.isLoading);
 
@@ -25,6 +29,19 @@ function SignIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(logIn({ email, password }));
+    toast.success("Basariyla giris yaptiniz!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    setTimeout(() => {
+      navigate("/");
+    }, 2500);
   };
 
   return (
@@ -61,6 +78,18 @@ function SignIn() {
         >
           {isLoading ? "Yükleniyor..." : "Giris Yap"}
         </Button>
+        <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
         <Box
           sx={{
             display: "flex",

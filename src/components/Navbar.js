@@ -4,7 +4,13 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import {
+  BsHouseDoorFill,
+  BsPersonCircle,
+  BsUpcScan,
+  BsFillTelephoneFill,
+  BsFileTextFill,
+} from "react-icons/bs";
 
 function myNavbar() {
   return (
@@ -23,18 +29,29 @@ function myNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/">Anasayfa</Nav.Link>
+            <Nav.Link href="/">
+              <BsHouseDoorFill
+                style={{ marginBottom: "3px", marginRight: "5px" }}
+              />
+              Anasayfa
+            </Nav.Link>
+            <Nav.Link href="/products">
+              <BsUpcScan style={{ marginBottom: "3px", marginRight: "5px" }} />
+              Ürünler
+            </Nav.Link>
 
-            <NavDropdown title="Ürünler" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/products">Milkshake</NavDropdown.Item>
-              <NavDropdown.Item href="/products">Ögütücüler</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/products">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/about">Hakkimizda</Nav.Link>
-            <Nav.Link href="/contact">Iletisim</Nav.Link>
+            <Nav.Link href="/about">
+              <BsFileTextFill
+                style={{ marginBottom: "3px", marginRight: "5px" }}
+              />
+              Hakkimizda
+            </Nav.Link>
+            <Nav.Link href="/contact">
+              <BsFillTelephoneFill
+                style={{ marginBottom: "3px", marginRight: "5px" }}
+              />
+              Iletisim
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -44,6 +61,9 @@ function myNavbar() {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
+            <Nav.Link href="/login">
+              <BsPersonCircle className="personIcon" />
+            </Nav.Link>
           </Form>
         </Navbar.Collapse>
       </Container>

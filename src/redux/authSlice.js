@@ -24,7 +24,6 @@ export const register = createAsyncThunk(
       await createUserWithEmailAndPassword(auth, email, password);
       await updateCurrentUser(auth, { displayName: name });
     } catch (error) {
-      alert(error.message);
       return rejectWithValue(error.code);
     }
   }
