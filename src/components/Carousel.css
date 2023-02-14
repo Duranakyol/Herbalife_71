@@ -1,0 +1,25 @@
+.myCarousel img {
+  width: 100%;
+  height: 670px;
+}
+
+.mySpan {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(25, 79, 79, 0.7);
+  padding: 7px 30px;
+  position: relative;
+  top: -350px;
+  left: 620px;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.myText {
+  position: absolute;
+  top: 280px;
+}
+
+.myText p {
+  font-size: 1.3rem;
+}

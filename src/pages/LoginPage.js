@@ -5,6 +5,7 @@ import { changeEmail, changePassword, logIn } from "../redux/authSlice";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./LoginPage.css";
 
 function SignIn() {
   const navigate = useNavigate();

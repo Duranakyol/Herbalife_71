@@ -1,0 +1,45 @@
+.footerRow {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.links {
+  display: flex;
+}
+
+.links img {
+  width: 120px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.links .text {
+  margin: 40px 0 0 10px;
+}
+
+.mittel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+}
+
+.rechts {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+}
+
+.rechts a {
+  margin-right: 10px;
+}

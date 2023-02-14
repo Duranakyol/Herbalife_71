@@ -1,0 +1,71 @@
+.tamsayfa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+
+.tamsayfa > h1 {
+  font-size: 1.4em;
+  color: brown;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.produkt {
+  display: flex;
+  width: 1200px;
+  height: 100%;
+  background-color: white;
+  padding: 5px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.produkt:hover {
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.produkt img {
+  width: 200px;
+  height: 200px;
+}
+
+.produkt:first-child {
+  margin-top: 0;
+}
+
+.produkt:last-child {
+  margin-bottom: 20px;
+}
+
+.produkt > img {
+  border-radius: 20px;
+}
+
+.produkt > .yazilar {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.produkt > .yazilar > h1 {
+  text-align: center;
+  color: red;
+  font-size: 1.4em;
+}
+
+.produkt > .yazilar > p {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.produkt > .yazilar > span {
+  float: right;
+}

@@ -11,6 +11,7 @@ import {
   BsFillTelephoneFill,
   BsFileTextFill,
 } from "react-icons/bs";
+import "./Navbar.css";
 
 function myNavbar() {
   return (

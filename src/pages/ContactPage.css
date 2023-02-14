@@ -1,0 +1,153 @@
+.contactPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #333;
+}
+
+.person > h1 {
+  color: red;
+  text-align: center;
+  font-size: 2.4em;
+  padding-top: 30px;
+}
+
+.personContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.personNeu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 350px;
+  background-color: #eee;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.personNeu:hover {
+  box-shadow: 0px 0px 5px 6px rgba(246, 0, 66, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 6px rgba(246, 0, 66, 0.75);
+  -moz-box-shadow: 0px 0px 5px 6px rgba(246, 0, 66, 0.75);
+  cursor: pointer;
+}
+
+.personNeu .image {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDX-JbxDsB3dHyHiBUx18MQpp-rbpD7JS51zncomchMeoFWVHdx6XRz2HumUSBz7-GBk&usqp=CAU);
+  width: 100%;
+  height: 130px;
+  border-radius: 20px 20px 0 0;
+}
+
+.image img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+  left: 80px;
+  z-index: 1;
+}
+
+.personNeu .name {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.personNeu .myBtn {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.personNeu .myBtn:hover {
+  background-color: blue;
+}
+
+.iletisim {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: auto;
+  max-width: 600px;
+}
+
+.myForm input,
+.myForm textarea {
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f4f4f4;
+}
+
+.myForm .formBtn {
+  padding: 8px 0;
+  background-color: blueviolet;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.myForm .formBtn:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.myForm textarea {
+  text-align: center;
+}
+
+.iletisim h1 {
+  color: red;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.iletisim .harita {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.iletisim > .harita > .map {
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 700px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+}
