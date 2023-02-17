@@ -22,23 +22,23 @@ function Footer() {
               src="https://1000logos.net/wp-content/uploads/2019/06/Herbalife.png"
             />
           </Navbar.Brand>
-          <div className="text">Herbalife_71</div>
+          <div className="text">HERBALIFE_71</div>
         </Col>
         <Col className="mittel">
           <h6>
             <FaHome size={20} style={{ marginRight: "2rem" }} />
-            <span> Am Appelhorst 2 12353 Berlin</span>
+            <span> Hüseyin Kahya Mah. Rauf Denktas Bulvari, E1</span>
           </h6>
           <div>
             <h6>
               <FaPhone size={20} style={{ marginRight: "2rem" }} />
-              <span> +49 176 458 843 26</span>
+              <span> +90 538 977 59 66</span>
             </h6>
           </div>
           <div>
             <h6>
               <FaMailBulk size={20} style={{ marginRight: "2rem" }} />
-              <a href="mailto:duran.akyol.yahoo.com">duran.akyol@yahoo.com</a>
+              <a href="mailto:felmas616@gmail.com">felmas616@gmail.com</a>
             </h6>
           </div>
         </Col>
@@ -46,7 +46,7 @@ function Footer() {
           <h5>Sosyal Medyadan bizi takip edebilirsiniz.</h5>
           <h6>Tüm Haklari Saklidir</h6>
           <div>
-            <a href="https://">
+            <a href="https://www.instagram.com/fitbayanlafitol/" target="blank">
               <FaInstagram />
             </a>
             <a href="https://">

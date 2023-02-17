@@ -8,7 +8,7 @@ function ContactPage() {
   return (
     <div className="contactPage">
       <div className="person">
-        <h1>SÜPERVISÖRLERIMIZ</h1>
+        <h1>DISTRIBÜTÖRLERIMIZ</h1>
         <Person />
       </div>
 

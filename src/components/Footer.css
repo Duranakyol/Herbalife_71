@@ -17,20 +17,20 @@ a {
 .links img {
   width: 120px;
   height: 60px;
-  margin-top: 20px;
+  margin-top: 25px;
   border-radius: 10px;
 }
 
 .links .text {
-  margin: 40px 0 0 10px;
+  margin: 45px 0 0 10px;
+  font-weight: bold;
 }
 
 .mittel {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .rechts {
@@ -40,6 +40,11 @@ a {
   margin-top: 10px;
 }
 
+.rechts h6 {
+  margin: 0;
+}
+
 .rechts a {
   margin-right: 10px;
+  font-size: 1.2rem;
 }
