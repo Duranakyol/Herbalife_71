@@ -1,6 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Carousel.css";
 
 function UncontrolledExample() {
   return (
@@ -12,8 +11,8 @@ function UncontrolledExample() {
           alt="First slide"
         />
         <Carousel.Caption className="myText">
-          <h2>KIRIKKALE HERBALIFE AILESINE HOSGELDINIZ</h2>
-          <p>Yüklenen ürünleri asagida görebilirsiniz</p>
+          <h2>KIRIKKALE HERBALIFE AİLESİNE HOŞGELDİNİZ</h2>
+          <p>Yüklenen ürünleri aşağıda görebilirsiniz.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="myCarousel">
@@ -37,8 +36,8 @@ function UncontrolledExample() {
           alt="Letzte slide"
         />
         <Carousel.Caption className="myText">
-          <h2>Bu sayfa sadece ürün tanitim amaclidir</h2>
-          <p>Satislarimiz distribütörlerimiz üzerinden yapilmaktadir!</p>
+          <h2>Bu sayfa sadece ürün tanıtımı içindir.</h2>
+          <p>Distribütörlerimiz aracılığıyla satış yapıyoruz!</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

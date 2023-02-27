@@ -11,14 +11,15 @@ import Footer from "./components/Footer";
 import { Provider } from "react-redux";
 import { store } from "./redux";
 import { CssBaseline } from "@mui/material";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
         <CssBaseline>
+          <Navbar />
           <Router>
-            <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
@@ -26,9 +27,10 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
+              <Route path="*" element={<ErrorPage />} />
             </Routes>
-            <Footer />
           </Router>
+          <Footer />
         </CssBaseline>
       </Provider>
     </div>

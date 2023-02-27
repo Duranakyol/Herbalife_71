@@ -123,7 +123,7 @@ function GroupExample() {
 
   return (
     <div>
-      <h1 className="baslik">YENI ÜRÜNLERIMIZ</h1>
+      <h1 className="baslik">YENİ ÜRÜNLERİMİZ</h1>
       <div className="cardContainer">
         {LatestUploads.map((item) => (
           <div className="myCard">
@@ -145,7 +145,7 @@ function GroupExample() {
           </div>
         ))}
       </div>
-      <h1 className="baslik">COK SATANLAR</h1>
+      <h1 className="baslik">ÇOK SATANLAR</h1>
       <div className="cardContainer">
         {TopLikes.map((item) => (
           <div className="myCard">

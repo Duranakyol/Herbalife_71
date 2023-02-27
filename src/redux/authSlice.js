@@ -35,6 +35,7 @@ export const logIn = createAsyncThunk(
     try {
       await signInWithEmailAndPassword(auth, email, password);
     } catch (e) {
+      alert(e);
       return rejectWithValue(e.code);
     }
   }

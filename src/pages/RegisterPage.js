@@ -38,7 +38,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(register({ name, email, password }));
-    toast.success("Basariyla kaydoldunuz!", {
+    toast.success("Başarıyla kaydoldunuz!", {
       position: "top-center",
       autoClose: 2000,
       hideProgressBar: false,
@@ -57,7 +57,7 @@ function SignUp() {
     <div className="loginPage">
       <form onSubmit={handleSubmit}>
         <Typography variant="h5" sx={{ textAlign: "center" }}>
-          Kayit Ol
+          Kayıt Ol
         </Typography>
         <TextField
           fullWidth
@@ -81,7 +81,7 @@ function SignUp() {
         <TextField
           fullWidth
           margin="normal"
-          label="Sifre"
+          label="Şifre"
           required
           type="password"
           value={password}

@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <div>
-      <h1>ILETISIM</h1>
+      <h1>İLETİŞİM</h1>
       <form
         className="myForm"
         action="mailto:felmas61@gmail.com"
@@ -16,7 +16,7 @@ const Form = () => {
         <input type="email" placeholder="Email" />
         <label>Konu</label>
         <input type="text" placeholder="Konu" />
-        <label>Message</label>
+        <label>Mesaj</label>
         <textarea rows="6" placeholder="Mesajinizi buraya yaziniz!" />
         <button className="formBtn">Gönder</button>
       </form>

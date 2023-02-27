@@ -1,5 +1,5 @@
 import React from "react";
-import profilePhoto from "./profilePhoto.jpg";
+import profilePhoto from "../assets/img/profilePhoto.jpg";
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
 
 function PersonNeu() {

@@ -11,7 +11,7 @@ import {
   BsFillTelephoneFill,
   BsFileTextFill,
 } from "react-icons/bs";
-import "./Navbar.css";
+import "../assets/styles/Navbar.css";
 
 function myNavbar() {
   return (
@@ -26,8 +26,8 @@ function myNavbar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
+            className="myNavbar me-auto my-2 my-lg-0"
+            style={{ maxHeight: "500px" }}
             navbarScroll
           >
             <Nav.Link href="/">
@@ -45,23 +45,23 @@ function myNavbar() {
               <BsFileTextFill
                 style={{ marginBottom: "3px", marginRight: "5px" }}
               />
-              Hakkimizda
+              Hakkımızda
             </Nav.Link>
             <Nav.Link href="/contact">
               <BsFillTelephoneFill
                 style={{ marginBottom: "3px", marginRight: "5px" }}
               />
-              Iletisim
+              İletişim
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Arama..."
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-success">Arama</Button>
             <Nav.Link href="/login">
               <BsPersonCircle className="personIcon" />
             </Nav.Link>

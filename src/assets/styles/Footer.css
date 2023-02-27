@@ -1,7 +1,8 @@
 .footerRow {
   display: flex;
-  justify-content: space-around;
-  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
   background-color: #ddd;
 }
 
@@ -12,6 +13,7 @@ a {
 
 .links {
   display: flex;
+  width: 33%;
 }
 
 .links img {
@@ -28,6 +30,7 @@ a {
 
 .mittel {
   display: flex;
+  width: 33%;
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -36,7 +39,7 @@ a {
 .rechts {
   display: flex;
   flex-direction: column;
-
+  width: 33%;
   margin-top: 10px;
 }
 
@@ -47,4 +50,23 @@ a {
 .rechts a {
   margin-right: 10px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 786px) {
+  .footerRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+  }
+  .footerRow > * {
+    width: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  .footerRow > * {
+    width: 25%;
+  }
 }

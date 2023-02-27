@@ -2,14 +2,12 @@ import React from "react";
 import { TextField, Button, Box, Link, Typography } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import { changeEmail, changePassword, logIn } from "../redux/authSlice";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { Link as RouterLink } from "react-router-dom";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./LoginPage.css";
+import "../assets/styles/LoginPage.css";
 
 function SignIn() {
-  const navigate = useNavigate();
-
   const email = useSelector((state) => state.auth.email);
   const password = useSelector((state) => state.auth.password);
 
@@ -30,7 +28,8 @@ function SignIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(logIn({ email, password }));
-    toast.success("Basariyla giris yaptiniz!", {
+
+    /* toast.success("Başarıyla giriş yaptınız!", {
       position: "top-center",
       autoClose: 2000,
       hideProgressBar: false,
@@ -39,17 +38,14 @@ function SignIn() {
       draggable: true,
       progress: undefined,
       theme: "light",
-    });
-    setTimeout(() => {
-      navigate("/");
-    }, 2500);
+    }); */
   };
 
   return (
     <div className="loginPage">
       <form onSubmit={handleSubmit}>
         <Typography variant="h5" sx={{ textAlign: "center" }}>
-          Giris Yap
+          Giriş Yap
         </Typography>
         <TextField
           fullWidth
@@ -64,7 +60,7 @@ function SignIn() {
         <TextField
           fullWidth
           margin="normal"
-          label="Sifre"
+          label="Şifre"
           required
           type="password"
           value={password}
@@ -77,20 +73,9 @@ function SignIn() {
           fullWidth
           sx={{ mt: 2 }}
         >
-          {isLoading ? "Yükleniyor..." : "Giris Yap"}
+          {isLoading ? "Yükleniyor..." : "Giriş Yap"}
         </Button>
-        <ToastContainer
-          position="top-center"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
+
         <Box
           sx={{
             display: "flex",
