@@ -1,6 +1,7 @@
 import React from "react";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
+import yaseminHanim from "../assets/img/yaseminhanim.jpg";
 
 function PersonNeu() {
   const Persons = [
@@ -22,8 +23,7 @@ function PersonNeu() {
       isim: "Yasemin Kaplan",
       telefon: "0530 642 34 59",
       email: "felmas616@gmail.com",
-      resim:
-        "https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      resim: yaseminHanim,
     },
   ];
   return (

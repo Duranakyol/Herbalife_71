@@ -31,7 +31,7 @@ function Footer() {
 
         <h6>
           <FaPhone size={20} style={{ marginRight: "2rem" }} />
-          <span> +90 538 977 59 66</span>
+          <span> +905389775966</span>
         </h6>
 
         <h6>

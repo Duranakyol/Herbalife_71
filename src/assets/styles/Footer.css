@@ -1,6 +1,5 @@
 .footerRow {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   flex-grow: 1;
   background-color: #ddd;
@@ -33,6 +32,7 @@ a {
   width: 33%;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-grow: 1;
   margin-top: 20px;
 }
 
@@ -52,21 +52,21 @@ a {
   font-size: 1.2rem;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 820px) {
   .footerRow {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-left: 5rem;
-  }
-  .footerRow > * {
-    width: 50%;
   }
 }
 
-@media (max-width: 580px) {
-  .footerRow > * {
-    width: 25%;
+@media (max-width: 482px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links .text {
+    margin: 10px 0;
   }
 }
