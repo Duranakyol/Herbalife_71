@@ -1,7 +1,9 @@
 import React from "react";
-import profilePhoto from "../assets/img/profilePhoto.jpg";
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
 import yaseminHanim from "../assets/img/yaseminhanim.jpg";
+import süreyyahanim from "../assets/img/süreyyahanim.jpg";
+import hacikaplan from "../assets/img/hacikaplan.jpg";
+import abdullah from "../assets/img/abdullah.png";
 
 function PersonNeu() {
   const Persons = [
@@ -9,21 +11,25 @@ function PersonNeu() {
       isim: "Süreyya Akyol",
       telefon: "0538 977 59 96",
       email: "felmas616@gmail.com",
-      resim:
-        "https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      resim: süreyyahanim,
     },
     {
       isim: "Abdulkadir Akyol",
       telefon: "0538 211 92 45",
       email: "Keydrr71@icloud.com",
-      resim:
-        "https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      resim: abdullah,
     },
     {
       isim: "Yasemin Kaplan",
       telefon: "0530 642 34 59",
-      email: "felmas616@gmail.com",
+      email: "sehribankpln.71@gmail.com",
       resim: yaseminHanim,
+    },
+    {
+      isim: "Haci Kaplan",
+      telefon: "0505 920 82 86",
+      email: "hasehsu@hotmail.com",
+      resim: hacikaplan,
     },
   ];
   return (
@@ -31,7 +37,7 @@ function PersonNeu() {
       {Persons.map((person) => (
         <div className="personNeu">
           <div className="image">
-            <img src={profilePhoto} alt="profile" />
+            <img src={person.resim} alt="profile" />
           </div>
           <div className="name">
             <div>
