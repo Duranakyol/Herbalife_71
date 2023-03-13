@@ -12,6 +12,7 @@ import {
   BsFileTextFill,
 } from "react-icons/bs";
 import "../assets/styles/Navbar.css";
+import { FcGallery } from "react-icons/fc";
 
 function myNavbar() {
   return (
@@ -64,6 +65,9 @@ function myNavbar() {
             <Button variant="outline-success">Arama</Button>
             <Nav.Link href="/login">
               <BsPersonCircle className="personIcon" />
+            </Nav.Link>
+            <Nav.Link href="/gallery">
+              <FcGallery className="personIcon" />
             </Nav.Link>
           </Form>
         </Navbar.Collapse>

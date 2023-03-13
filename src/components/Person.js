@@ -3,7 +3,7 @@ import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
 import yaseminHanim from "../assets/img/yaseminhanim.jpg";
 import süreyyahanim from "../assets/img/süreyyahanim.jpg";
 import hacikaplan from "../assets/img/hacikaplan.jpg";
-import abdullah from "../assets/img/abdullah.png";
+import abdulkadir from "../assets/img/abdulkadir.jpg";
 
 function PersonNeu() {
   const Persons = [
@@ -17,7 +17,7 @@ function PersonNeu() {
       isim: "Abdulkadir Akyol",
       telefon: "0538 211 92 45",
       email: "Keydrr71@icloud.com",
-      resim: abdullah,
+      resim: abdulkadir,
     },
     {
       isim: "Yasemin Kaplan",

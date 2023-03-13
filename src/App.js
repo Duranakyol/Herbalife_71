@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux";
 import { CssBaseline } from "@mui/material";
 import ErrorPage from "./components/ErrorPage";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/gallery" element={<Gallery />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
               <Route path="*" element={<ErrorPage />} />
