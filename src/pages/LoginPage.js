@@ -42,56 +42,58 @@ function SignIn() {
   };
 
   return (
-    <div className="loginPage">
-      <form onSubmit={handleSubmit}>
-        <Typography variant="h5" sx={{ textAlign: "center" }}>
-          Giriş Yap
-        </Typography>
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Email Adresi"
-          required
-          autoComplete="email"
-          autoFocus
-          value={email}
-          onChange={handleEmailChange}
-        />
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Şifre"
-          required
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-        <Button
-          type="submit"
-          variant="contained"
-          disabled={isLoading}
-          fullWidth
-          sx={{ mt: 2 }}
-        >
-          {isLoading ? "Yükleniyor..." : "Giriş Yap"}
-        </Button>
+    <div className="myContainer">
+      <div className="loginPage">
+        <form onSubmit={handleSubmit}>
+          <Typography variant="h5" sx={{ textAlign: "center" }}>
+            Giriş Yap
+          </Typography>
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Email Adresi"
+            required
+            autoComplete="email"
+            autoFocus
+            value={email}
+            onChange={handleEmailChange}
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Şifre"
+            required
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={isLoading}
+            fullWidth
+            sx={{ mt: 2 }}
+          >
+            {isLoading ? "Yükleniyor..." : "Giriş Yap"}
+          </Button>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            mt: 4,
-          }}
-        >
-          <Link component={RouterLink} to="../forgot-password">
-            Sifrenizi mi unuttunuz?
-          </Link>
-          <Link component={RouterLink} to="../register">
-            Bir hesabin yok mu? Kaydol
-          </Link>
-        </Box>
-      </form>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              mt: 4,
+            }}
+          >
+            <Link component={RouterLink} to="../forgot-password">
+              Sifrenizi mi unuttunuz?
+            </Link>
+            <Link component={RouterLink} to="../register">
+              Bir hesabin yok mu? Kaydol
+            </Link>
+          </Box>
+        </form>
+      </div>
     </div>
   );
 }
