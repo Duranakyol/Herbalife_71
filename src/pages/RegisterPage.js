@@ -10,6 +10,7 @@ import {
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../assets/styles/RegisterPage.css";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -54,75 +55,77 @@ function SignUp() {
   };
 
   return (
-    <div className="loginPage">
-      <form onSubmit={handleSubmit}>
-        <Typography variant="h5" sx={{ textAlign: "center" }}>
-          Kayıt Ol
-        </Typography>
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Isim"
-          required
-          autoComplete="isim"
-          value={name}
-          autoFocus
-          onChange={handleNameChange}
-        />
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Email Adresi"
-          required
-          autoComplete="email"
-          value={email}
-          onChange={handleEmailChange}
-        />
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Şifre"
-          required
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-        <Button
-          type="submit"
-          variant="contained"
-          disabled={isLoading}
-          fullWidth
-          sx={{ mt: 2 }}
-        >
-          {isLoading ? "Yükleniyor..." : "Kaydol"}
-        </Button>
-        <ToastContainer
-          position="top-center"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-        {/* Same as */}
-        <ToastContainer />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-            mt: 4,
-          }}
-        >
-          <Link component={RouterLink} to="../login">
-            Zaten bir hesabin var mi? Giris Yap
-          </Link>
-        </Box>
-      </form>
+    <div className="myContainer">
+      <div className="registerPage">
+        <form onSubmit={handleSubmit}>
+          <Typography variant="h5" sx={{ textAlign: "center" }}>
+            Kayıt Ol
+          </Typography>
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Isim"
+            required
+            autoComplete="isim"
+            value={name}
+            autoFocus
+            onChange={handleNameChange}
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Email Adresi"
+            required
+            autoComplete="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Şifre"
+            required
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={isLoading}
+            fullWidth
+            sx={{ mt: 2 }}
+          >
+            {isLoading ? "Yükleniyor..." : "Kaydol"}
+          </Button>
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+          {/* Same as */}
+          <ToastContainer />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+              mt: 4,
+            }}
+          >
+            <Link component={RouterLink} to="../login">
+              Zaten bir hesabin var mi? Giris Yap
+            </Link>
+          </Box>
+        </form>
+      </div>
     </div>
   );
 }

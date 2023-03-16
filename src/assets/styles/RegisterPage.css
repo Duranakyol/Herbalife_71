@@ -1,0 +1,16 @@
+.myContainer {
+  background: url("../img/backgroundLogin.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registerPage {
+  background-color: rgb(221, 131, 67);
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+}
