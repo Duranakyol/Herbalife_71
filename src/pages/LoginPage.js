@@ -42,7 +42,7 @@ function SignIn() {
   };
 
   return (
-    <div className="myContainer">
+    <div className="loginContainer">
       <div className="loginPage">
         <form onSubmit={handleSubmit}>
           <Typography variant="h5" sx={{ textAlign: "center" }}>

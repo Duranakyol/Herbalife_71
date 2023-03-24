@@ -55,7 +55,7 @@ function SignUp() {
   };
 
   return (
-    <div className="myContainer">
+    <div className="registerContainer">
       <div className="registerPage">
         <form onSubmit={handleSubmit}>
           <Typography variant="h5" sx={{ textAlign: "center" }}>
