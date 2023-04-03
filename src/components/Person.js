@@ -43,7 +43,7 @@ function PersonNeu() {
             <div>
               <b>{person.isim}</b>
             </div>
-            <div className="unvan">Süpervisör</div>
+            <div className="unvan">Süpervizör</div>
             <div className="numara">
               <BsFillTelephoneFill
                 style={{ marginRight: "5px", marginBottom: "5px" }}
