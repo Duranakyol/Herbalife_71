@@ -19,13 +19,16 @@ function ContactPage() {
 
         <Col className="harita">
           <h1>HARİTA</h1>
+
           <div className="map">
             <iframe
               title="herbalifeHarita"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.221565527787!2d33.502566615314294!3d39.846867479435474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4081df01f2473c5b%3A0x2074f9eb797a8caf!2zSGVyYmFsaWZlIEvEsXLEsWtrYWxl!5e0!3m2!1str!2sde!4v1662478892515!5m2!1str!2sde"
-              loading="lazy"
-              width="500"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12252.986630694371!2d33.507659!3d39.8463051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4081df401e0b5ca9%3A0x220ae1e456edadb8!2sLive%20Life%20Aktif%20Yasam%20Merkezi!5e0!3m2!1str!2sde!4v1681130255103!5m2!1str!2sde"
+              width="600"
               height="550"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             />
           </div>
         </Col>
